@@ -1,0 +1,117 @@
+/* Choose your site's color pallete and store as variables */
+
+:root {
+    --darkpurple: #412234;
+    --white: #FFFFFF;
+    --yellow: #FFC857;
+    --charcoal: #2E4052;
+    --turquoise: #BDD9BF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navigation {
+    background: var(--charcoal);
+    color: var(--white);
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 14rem;
+    padding-right: 14rem;
+    border-bottom: 2px solid var(--yellow);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.logo a:hover {
+    color: var(--yellow);
+}
+
+.navigation-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+.navigation-list-item a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.navigation-list-item a:hover {
+    color: var(--yellow);
+}
+
+.navigation-list-item-contact {
+    background: var(--yellow);
+    padding: 0.3rem;
+}
+
+.navigation-list-item-contact a {
+    text-decoration: none;
+    color: var(--charcoal);
+}
+
+.navigation-list-item-contact a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: var(--charcoal);
+	border-top: 2px solid var(--yellow);
+}
+
+.footer-container{
+    padding: 2rem 14rem 2rem 14rem;
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
+}
+
+.footer-copyright {
+    font-size: 0.8rem;
+    color: white;
+    padding: 1rem;
+    border-top: 2px solid var(--yellow);
+    text-align: center;
+}
+
+.footer-contact-list {
+    list-style-type: none;
+    padding: 0;
+    line-height: 1.6rem;
+}
+
+.footer-contact-list-link a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.footer-contact-list-link a:hover {
+    color: var(--yellow);
+}
+
+.footer-list-nav-item a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.footer-list-nav-item a:hover {
+    color: var(--yellow);    
+}
