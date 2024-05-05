@@ -1,1 +1,7 @@
 Social Media Icons downloaded from https://iconmonstr.com
+
+I am currently learning PHP and am using this project as a template to begin building dynamic websites. Feel free to use or improve the code.
+
+The project includes a header.php and footer.php which is included for each main page.
+
+To change the navigation items, simply alter the array in header.php to reflect your preferences.
