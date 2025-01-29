@@ -1,14 +1,100 @@
+/* Choose your site's color pallete and store as variables */
+
+:root {
+    --darkpurple: #412234;
+    --white: #FFFFFF;
+    --yellow: #FFC857;
+    --charcoal: #2E4052;
+    --turquoise: #BDD9BF;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 html, body {
     min-height: 100%;
 }
+
+/* ------- NAVBAR -------- */
+
+.navigation {
+    background: var(--charcoal);
+    color: var(--white);
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 14rem;
+    padding-right: 14rem;
+    border-bottom: 2px solid var(--yellow);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+	font-size: 1.4em;
+}
+
+.logo a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.logo a:hover {
+    color: var(--yellow);
+}
+
+.navigation-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+.navigation-list-item a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.navigation-list-item a:hover {
+    color: var(--yellow);
+}
+
+.navigation-list-item-contact {
+    background: var(--yellow);
+    padding: 0.3rem;
+}
+
+.navigation-list-item-contact a {
+    text-decoration: none;
+    color: var(--charcoal);
+}
+
+.navigation-list-item-contact a:hover {
+    text-decoration: underline;
+}
+
+.hamburger {
+	display: none;
+}
+
+.hamburger-lines {
+	height: 3px;
+	width: 24px;
+	background-color: var(--yellow);
+	border-radius: 10px;
+}
+
+/* ---------- HERO SECTION ---------- */
+
 .hero-image1 {
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/hero2.jpg);
-	height: 58vh;
+	height: 80vh;
 }
 
 .hero-image2 {
@@ -63,6 +149,8 @@ html, body {
 	height: 2rem;
 	background: var(--yellow);
 	font-size: 1rem;
+	width: 8em;
+	margin: 0 0.5em;
 }
 
 .hero-button a {
@@ -95,3 +183,112 @@ html, body {
 	font-size: 2.4rem;
 }
 
+/* -------FOOTER-------- */
+
+footer {
+    background: var(--charcoal);
+	border-top: 2px solid var(--yellow);
+}
+
+.footer-container{
+    padding: 2rem 14rem 2rem 14rem;
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
+}
+
+.footer-title {
+	color: var(--yellow);
+}
+
+.footer-copyright {
+    font-size: 0.8rem;
+    color: white;
+    padding: 1rem;
+    border-top: 2px solid var(--yellow);
+    text-align: center;
+}
+
+.footer-contact-list {
+    list-style-type: none;
+    padding: 0;
+    line-height: 1.6rem;
+}
+
+.footer-contact-list-link a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.footer-contact-list-link a:hover {
+    color: var(--yellow);
+}
+
+.footer-list-nav-item a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.footer-list-nav-item a:hover {
+    color: var(--yellow);    
+}
+
+/* -------MEDIA QUERIES------ */
+
+@media (max-width: 1000px) {
+
+	/* ------NAVIGATION------ */
+	.navigation {
+		padding-left: 6em;
+		padding-right: 6em;
+	}
+
+    .hamburger {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 4px;
+	}
+
+	/* Hamburger Lines */
+	.hamburger-lines {
+		height: 3px;
+		width: 24px;
+		background-color: var(--yellow);
+		border-radius: 10px;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.navigation-list {
+		display: none;
+	}
+
+	/* ------HERO----- */
+	/* currently empty */
+
+	/* ------FOOTER-------- */
+
+	.footer-container {
+		padding: 2em 6em 2em 6em;
+	}
+
+}
+
+
+@media (max-width: 600px) {
+	.navigation {
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+
+	.footer-container {
+		padding: 2em;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.footer-section {
+		padding-bottom: 1em
+	}
+}

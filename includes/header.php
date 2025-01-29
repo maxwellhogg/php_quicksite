@@ -48,7 +48,6 @@ $additional_links = [
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -67,5 +66,11 @@ $additional_links = [
                 <li class="navigation-list-item-contact"><a href="<?= $navigation_link ?>"><?= $navigation_item ?></a></li>
             <?php endif; endforeach; ?>
         </ul>
-            </navbar>
+        <div class="hamburger">
+            <div class="hamburger-lines" id="hamburger-line-1"></div>
+            <div class="hamburger-lines" id="hamburger-line-2"></div>
+            <div class="hamburger-lines" id="hamburger-line-3"></div>
+        </div>
+    </nav>
+    </navbar>
     <main>

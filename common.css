@@ -16,6 +16,8 @@
     font-style: normal;
 }
 
+/* ------- NAVBAR -------- */
+
 .navigation {
     background: var(--charcoal);
     color: var(--white);
@@ -71,6 +73,8 @@
 .navigation-list-item-contact a:hover {
     text-decoration: underline;
 }
+
+/* -------FOOTER-------- */
 
 footer {
     background: var(--charcoal);
