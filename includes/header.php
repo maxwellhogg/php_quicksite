@@ -48,6 +48,8 @@ $additional_links = [
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your website description here.">
+    <meta name="keywords" content="Keyword1, Keyword2, Keyword3">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -55,7 +57,7 @@ $additional_links = [
     <title><?= $siteowner_name ?> &bull; <?= $page_title ?></title>
 </head>
 <body>
-    <navbar class="navigation">
+    <nav class="navigation">
         <div class="logo">
             <a href="<?= $link_home ?>">LOGO</a>
         </div>
@@ -71,6 +73,15 @@ $additional_links = [
             <div class="hamburger-lines" id="hamburger-line-2"></div>
             <div class="hamburger-lines" id="hamburger-line-3"></div>
         </div>
+        <div class="slide-in-menu">
+            <div class="logo">
+                <a href="<?= $link_home ?>">LOGO</a>
+            </div>
+            <ul class="slide-in-menu-items">
+                <?php foreach ($navigation_items as $navigation_link => $navigation_item): ?>
+                <li class="slide-in-menu-item"><a href="<?= $navigation_link ?>"><?= $navigation_item ?></a></li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
     </nav>
-    </navbar>
     <main>

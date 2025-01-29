@@ -79,9 +79,9 @@ html, body {
     text-decoration: underline;
 }
 
-.hamburger {
+/* .hamburger {
 	display: none;
-}
+} */
 
 .hamburger-lines {
 	height: 3px;
@@ -89,6 +89,58 @@ html, body {
 	background-color: var(--yellow);
 	border-radius: 10px;
 }
+
+/* .slide-in-menu {
+	display: none;
+} */
+
+.hamburger {
+	display: none;
+    position: relative;
+    z-index: 1001; /* Higher than slide-in-menu */
+}
+
+.slide-in-menu {
+	display: none;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100vw;
+    height: 100vh;
+    background: var(--charcoal);
+    display: flex;
+	flex-direction: column;
+	gap: 2em;
+    justify-content: center;
+    align-items: center;
+    transition: left 0.3s ease-in-out;
+    z-index: 1000; /* Lower than .hamburger */
+}
+
+.slide-in-menu ul {
+    padding: 0;
+    list-style-type: none;
+	font-size: 1.4em;
+	text-align: center;
+}
+
+.slide-in-menu .logo a {
+	font-size: 1.8em;
+}
+
+.slide-in-menu-item {
+	padding: 0.4em;
+}
+
+.slide-in-menu a {
+	text-decoration: none;
+	color: var(--white);
+}
+
+.slide-in-menu-items a:hover {
+	color: var(--yellow);
+}
+
 
 /* ---------- HERO SECTION ---------- */
 
