@@ -1,11 +1,14 @@
 /* Choose your site's color pallete and store as variables */
 
 :root {
-    --darkpurple: #412234;
-    --white: #FFFFFF;
-    --yellow: #FFC857;
-    --charcoal: #2E4052;
-    --turquoise: #BDD9BF;
+    --secondary-color: #412234;
+    --main-text: #FDF0D5;
+    --main-contrast: #FFC857;
+    --main-color: #2E4052;
+    --secondary-contrast: #BDD9BF;
+	/* --add-your-own: ;
+	--add-your-own: ;
+	--add-your-own: ; */
 }
 
 * {
@@ -23,14 +26,14 @@ html, body {
 /* ------- NAVBAR -------- */
 
 .navigation {
-    background: var(--charcoal);
-    color: var(--white);
-    height: 3rem;
+    background: var(--main-color);
+    color: var(--main-text);
+    height: 5em;
     display: flex;
     justify-content: space-between;
     padding-left: 14rem;
     padding-right: 14rem;
-    border-bottom: 2px solid var(--yellow);
+    border-bottom: 2px solid var(--main-contrast);
 }
 
 .logo {
@@ -41,11 +44,11 @@ html, body {
 
 .logo a {
     text-decoration: none;
-    color: var(--white);
+    color: var(--main-text);
 }
 
 .logo a:hover {
-    color: var(--yellow);
+    color: var(--main-contrast);
 }
 
 .navigation-list {
@@ -58,21 +61,21 @@ html, body {
 
 .navigation-list-item a {
     text-decoration: none;
-    color: var(--white);
+    color: var(--main-text);
 }
 
 .navigation-list-item a:hover {
-    color: var(--yellow);
+    color: var(--main-contrast);
 }
 
 .navigation-list-item-contact {
-    background: var(--yellow);
+    background: var(--main-contrast);
     padding: 0.3rem;
 }
 
 .navigation-list-item-contact a {
     text-decoration: none;
-    color: var(--charcoal);
+    color: var(--main-color);
 }
 
 .navigation-list-item-contact a:hover {
@@ -86,7 +89,7 @@ html, body {
 .hamburger-lines {
 	height: 3px;
 	width: 24px;
-	background-color: var(--yellow);
+	background-color: var(--main-contrast);
 	border-radius: 10px;
 }
 
@@ -107,7 +110,7 @@ html, body {
     left: -100%;
     width: 100vw;
     height: 100vh;
-    background: var(--charcoal);
+    background: var(--main-color);
     display: flex;
 	flex-direction: column;
 	gap: 2em;
@@ -134,11 +137,11 @@ html, body {
 
 .slide-in-menu a {
 	text-decoration: none;
-	color: var(--white);
+	color: var(--main-text);
 }
 
 .slide-in-menu-items a:hover {
-	color: var(--yellow);
+	color: var(--main-contrast);
 }
 
 
@@ -185,11 +188,15 @@ html, body {
 }
 
 .hero-text-container h1, p {
-	color: var(--white);
+	color: var(--main-text);
 }
 
 .hero-text-container h1 {
 	font-size: 2.4rem;
+}
+
+.hero-text-container button:hover {
+	background: var(--secondary-contrast);
 }
 
 .hero-text-container p {
@@ -199,7 +206,7 @@ html, body {
 .hero-button {
 	border: none;
 	height: 2rem;
-	background: var(--yellow);
+	background: var(--main-contrast);
 	font-size: 1rem;
 	width: 8em;
 	margin: 0 0.5em;
@@ -207,7 +214,7 @@ html, body {
 
 .hero-button a {
 	text-decoration: none;
-	color: var(--charcoal);
+	color: var(--main-color);
 }
 
 .hero-button a:hover {
@@ -231,33 +238,33 @@ html, body {
 }
 
 .header-text-container h1 {
-	color: var(--white);
+	color: var(--main-text);
 	font-size: 2.4rem;
 }
 
 /* -------FOOTER-------- */
 
 footer {
-    background: var(--charcoal);
-	border-top: 2px solid var(--yellow);
+    background: var(--main-color);
+	border-top: 2px solid var(--main-contrast);
 }
 
 .footer-container{
     padding: 2rem 14rem 2rem 14rem;
     display: flex;
     justify-content: space-between;
-    color: var(--white);
+    color: var(--main-text);
 }
 
 .footer-title {
-	color: var(--yellow);
+	color: var(--main-contrast);
 }
 
 .footer-copyright {
     font-size: 0.8rem;
-    color: white;
+    color: main-text;
     padding: 1rem;
-    border-top: 2px solid var(--yellow);
+    border-top: 2px solid var(--main-contrast);
     text-align: center;
 }
 
@@ -269,34 +276,49 @@ footer {
 
 .footer-contact-list-link a {
     text-decoration: none;
-    color: var(--white);
+    color: var(--main-text);
 }
 
 .footer-contact-list-link a:hover {
-    color: var(--yellow);
+    color: var(--main-contrast);
 }
 
 .footer-list-nav-item a {
     text-decoration: none;
-    color: var(--white);
+    color: var(--main-text);
 }
 
 .footer-list-nav-item a:hover {
-    color: var(--yellow);    
+    color: var(--main-contrast);    
 }
 
 /* -------CONTACT FORM------ */
+
+.contact-main-container {
+	background: var(--main-color);
+	border-top: 2px solid var(--main-contrast);
+	padding: 5em 0;
+}
 
 .contact-form-container {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
+	border: 2px solid var(--main-contrast);
+	background: var(--main-color);
+}
+
+.contact-form-container h2 {
+	color: var(--main-contrast);
+	text-align: center;
+	padding-bottom: 1em;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
     gap: 15px;
+	color: var(--main-text);
 }
 
 .form-group {
@@ -323,9 +345,9 @@ textarea {
     resize: vertical;
 }
 
-button {
-    background-color: var(--yellow);
-    color: var(--charcoal);
+.contact-submit {
+    background-color: var(--main-contrast);
+    color: var(--main-color);
     border: none;
     padding: 10px;
     font-size: 16px;
@@ -335,8 +357,8 @@ button {
 }
 
 button:hover {
-    background-color: var(--darkpurple);
-    color: var(--white);
+    background-color: var(--secondary-color);
+    color: var(--main-text);
 }
 
 .success-message {
@@ -372,7 +394,7 @@ button:hover {
 	.hamburger-lines {
 		height: 3px;
 		width: 24px;
-		background-color: var(--yellow);
+		background-color: var(--main-contrast);
 		border-radius: 10px;
 		transition: all 0.3s ease-in-out;
 	}
@@ -403,6 +425,18 @@ button:hover {
 		padding: 2em;
 		display: flex;
 		flex-direction: column;
+	}
+
+	.contact-main-container {
+		padding: 1em;
+	}
+
+	.contact-form-container {
+		border: none;
+	}
+
+	.form-group {
+		display: inline-block;
 	}
 
 	.footer-section {

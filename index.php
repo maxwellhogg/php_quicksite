@@ -1,7 +1,9 @@
 <?php
+
 $page_title = 'Home';
 $image = './images/hero2.jpg';
 include './includes/header.php';
+
 ?>
 
 <section class="hero-image1 hero">
@@ -15,6 +17,7 @@ include './includes/header.php';
 		<?php endif; endforeach; ?>
     </div>
 </section>
+
 <?php 
 include './includes/footer.php'
 ?>

@@ -98,40 +98,43 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
     </section>
 
-    <section class="contact-form-container">
-        <h2>Contact Us</h2>
+    <div class="contact-main-container">
 
-        <?php if (!empty($error_message)): ?>
-            <p class="error-message"><?= htmlspecialchars($error_message) ?></p>
-        <?php elseif (!empty($success_message)): ?>
-            <p class="success-message"><?= htmlspecialchars($success_message) ?></p>
-        <?php endif; ?>
+        <section class="contact-form-container">
+            <h2>Contact Us</h2>
 
-        <form action="" method="POST" class="contact-form">
-            <div class="form-group">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" placeholder="Please input your full name" required>
-            </div>
+            <?php if (!empty($error_message)): ?>
+                <p class="error-message"><?= htmlspecialchars($error_message) ?></p>
+            <?php elseif (!empty($success_message)): ?>
+                <p class="success-message"><?= htmlspecialchars($success_message) ?></p>
+            <?php endif; ?>
 
-            <div class="form-group">
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" placeholder="Please input your email address" required>
-            </div>
+            <form action="" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Please input your full name" required>
+                </div>
 
-            <div class="form-group">
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" placeholder="Please input the subject" required>
-            </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Please input your email address" required>
+                </div>
 
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" placeholder="Please input your message" required></textarea>
-            </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" placeholder="Please input the subject" required>
+                </div>
 
-            <button type="submit">Send</button>
-        </form>
-    </section>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Please input your message" required></textarea>
+                </div>
 
+                <button type="submit" class="contact-submit">Send</button>
+            </form>
+        </section>
+
+    </div>
 
 <?php 
 
