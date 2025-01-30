@@ -28,6 +28,16 @@
                     <?php endforeach; ?>
                 </ul>
             </div>
+            <!-- --- FIX: Change to additional_links ---- -->
+            <div class="footer-section">
+                <h4 class="footer-title"><?= $footer_title_4 ?></h4>
+                    <!-- </br> -->
+                <ul class="footer-contact-list">
+                    <?php foreach ($additional_links as $additional_link => $additional_item): ?>
+                        <li class="footer-contact-list-link"><a href="<?= $additional_link ?>"><?= $additional_item ?></a></li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
         </div>
         <div class="footer-copyright">
             <p>&copy;<?= $siteowner_name . ' ' . $year ?> - All rights reserved.</p>

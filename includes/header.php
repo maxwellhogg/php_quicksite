@@ -3,14 +3,16 @@ $siteowner_name = 'Template';
 $footer_title_1 = 'ADDRESS';
 $footer_title_2 = 'CONTACT';
 $footer_title_3 = 'NAVIGATION';
-$year = date('Y');
+$footer_title_4 = 'ADDITIONAL LINKS';
+$year = date('Y'); // Leave this alone to always get the correct year
 $link_home = 'index.php';
 $link_about = 'about.php';
 $link_services = 'services.php';
 $link_news = 'news.php';
 $link_contact = 'contact.php';
+$email_address = 'myemail@example.com'; // This is needed for the contact form should you wish to use it.
 
-
+// Enter your filenames and corresponding page titles. Don't forget to update your file structure accordingly
 $navigation_items =
     [
         'index.php' => 'Home',
@@ -20,6 +22,7 @@ $navigation_items =
         'contact.php' => 'Contact',
     ];
 
+// This is for the address that you would like to appear on your site    
 $address =
     [
         'Address Line 1',
@@ -28,11 +31,13 @@ $address =
         'P057 60DE',
     ];
 
+// Enter your contact links
 $contact_links = [
     'mailto:email@address.com' => 'email@address.com',
     'tel:01234 567 890' => '01234 567 890',
 ];
 
+// If you have any additional links, enter them here and ensure your file structure is updated accordingly
 $additional_links = [
     'terms-and-conditions.php' => 'Terms & Condition',
     'privacy-policy' => 'Privacy Policy',
