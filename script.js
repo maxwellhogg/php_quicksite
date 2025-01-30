@@ -1,3 +1,4 @@
+//HAMBURGER & SLIDE-IN MENU
 document.addEventListener("DOMContentLoaded", function() {
     const hamburger = document.querySelector(".hamburger");
     const slideInMenu = document.querySelector(".slide-in-menu");
@@ -57,10 +58,10 @@ style.innerHTML = `
     .slide-in-menu {
         position: fixed;
         top: 0;
-        left: -100%;
+        left: -110%;
         width: 100vw;
         height: 100vh;
-        background: var(--charcoal);
+        background: var(--main-color);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -77,3 +78,64 @@ style.innerHTML = `
     }
 `;
 document.head.appendChild(style);
+
+// ABOUT-US-1
+// Image Zoom on Hover
+const aboutImage = document.querySelector(".about-us-image img");
+aboutImage.addEventListener("mouseover", () => {
+    aboutImage.style.transform = "scale(1.1)";
+});
+aboutImage.addEventListener("mouseout", () => {
+    aboutImage.style.transform = "scale(1)";
+});
+
+// ABOUT-US-2
+// ease in from right
+document.addEventListener("DOMContentLoaded", function () {
+    const aboutSection2 = document.querySelector(".about-us-container-2");
+    function revealAboutUs2() {
+        const scrollPosition = window.scrollY + window.innerHeight;
+        const sectionTop = aboutSection2.offsetTop + aboutSection2.clientHeight / 3;
+        if (scrollPosition > sectionTop) {
+            aboutSection2.classList.add("visible");
+        }
+    }
+    window.addEventListener("scroll", revealAboutUs2);
+    revealAboutUs2(); // Run initially in case already in view
+});
+
+// ABOUT-US-3
+// Typing effect
+document.addEventListener("DOMContentLoaded", function () {
+    const aboutTextParagraphs = document.querySelectorAll(".about-us-text-3 p[data-typing]");
+    
+    function typeEffect(element, delay = 50) {
+        const text = element.innerHTML;
+        element.innerHTML = "";
+        element.style.opacity = "1";
+        let i = 0;
+
+        function type() {
+            if (i < text.length) {
+                element.innerHTML += text.charAt(i);
+                i++;
+                setTimeout(type, delay);
+            }
+        }
+        type();
+    }
+
+    function revealTypingEffect() {
+        aboutTextParagraphs.forEach(paragraph => {
+            const scrollPosition = window.scrollY + window.innerHeight;
+            const sectionTop = paragraph.offsetTop + paragraph.clientHeight / 3;
+            if (scrollPosition > sectionTop && paragraph.dataset.typed !== "true") {
+                typeEffect(paragraph);
+                paragraph.dataset.typed = "true";
+            }
+        });
+    }
+
+    window.addEventListener("scroll", revealTypingEffect);
+    revealTypingEffect(); // Run initially in case already in view
+});

@@ -1,0 +1,346 @@
+
+/* ------OFFERS-CARDS-1.PHP----- */
+
+.offers-cards-container {
+    text-align: center;
+    padding: 4em 2em;
+    background: var(--main-color);
+    color: var(--main-text);
+}
+
+.offers-heading {
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+    color: var(--main-contrast);
+}
+
+.offers-cards-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.offer-card {
+    background: var(--secondary-color);
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.offer-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+    color: var(--main-contrast);
+}
+
+.offer-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1em;
+    color: var(--highlight-color);
+}
+
+.offer-perks {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5em;
+}
+
+.offer-perks li {
+    font-size: 1.1rem;
+    margin-bottom: 0.5em;
+}
+
+.offer-button {
+    display: inline-block;
+    background: var(--main-contrast);
+    color: var(--main-color);
+    padding: 0.8em 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.offer-button:hover {
+    background: var(--secondary-contrast);
+}
+
+.offer-card.popular {
+    border: 3px solid var(--highlight-color);
+    transform: scale(1.05);
+}
+
+.offer-card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 1000px) {
+    .offers-cards-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .offers-cards-container {
+        padding: 3em 1em;
+    }
+    .offer-card {
+        width: 100%;
+    }
+}
+
+
+/* --------OFFERS-CARDS-2.PHP------ */
+
+
+.offers-cards-container-2 {
+    text-align: center;
+    padding: 4em 2em;
+    background: var(--main-contrast);
+    color: var(--main-color);
+}
+
+.offers-heading-2 {
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+    color: var(--main-color);
+}
+
+.offers-cards-wrapper-2 {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.offer-card-2 {
+    background: var(--secondary-color);
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.offer-header-2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 1em;
+    background: var(--highlight-color);
+    color: var(--secondary-contrast);
+    border-radius: 8px 8px 0 0;
+}
+
+.offer-price-2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1em;
+    color: var(--secondary-contrast);
+}
+
+.offer-perks-2 {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5em;
+    color: var(--secondary-contrast);
+}
+
+.offer-perks-2 li {
+    font-size: 1.1rem;
+    margin-bottom: 0.5em;
+}
+
+.offer-button-2 {
+    display: inline-block;
+    background: var(--secondary-contrast);
+    color: var(--main-color);
+    padding: 0.8em 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.offer-button-2:hover {
+    background: var(--main-contrast);
+    color: var(--main-color);
+}
+
+.offer-card-2.popular-2 {
+    border: 3px solid var(--highlight-color);
+    transform: scale(1.05);
+}
+
+.offer-card-2:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.15);
+}
+
+@media (max-width: 1000px) {
+    .offers-cards-wrapper-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .offers-cards-container-2 {
+        padding: 3em 1em;
+    }
+    .offer-card-2 {
+        width: 100%;
+    }
+}
+
+
+/* -------OFFERS-CARDS-3.PHP------- */
+
+
+.offers-cards-3 {
+    padding: 4em 2em;
+    background: var(--highlight-color);
+    color: var(--main-contrast);
+    text-align: center;
+}
+
+.offers-title-3 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Offers Container */
+.offers-container-3 {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Offer Card */
+.offer-card-3 {
+    background: var(--darkpurple);
+    color: var(--white);
+    padding: 2rem;
+    border-radius: 20px;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.offer-card-3:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Header Styles */
+.offer-header-3 {
+    padding: 1em;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.offer-header-3.basic {
+    background: var(--yellow);
+    color: var(--charcoal);
+}
+
+.offer-header-3.pro {
+    background: var(--lightblue);
+    color: var(--charcoal);
+}
+
+.offer-header-3.premium {
+    background: var(--red);
+    color: var(--white);
+}
+
+/* Pricing */
+.price-3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.price-3 span {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+/* Features List */
+.offer-features-3 {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.offer-features-3 li {
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+/* Call-to-Action Button */
+.offer-btn-3 {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    background: var(--main-contrast);
+    color: var(--main-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.offer-btn-3:hover {
+    background: var(--main-text);
+    color: var(--main-color);
+}
+
+/* Highlighting the "Pro" Plan */
+.popular {
+    transform: scale(1.1);
+    border: 2px solid var(--yellow);
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+    .offers-container-3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offer-card-3 {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    .offers-title-3 {
+        font-size: 2rem;
+    }
+
+    .offer-card-3 {
+        width: 100%;
+    }
+}
+

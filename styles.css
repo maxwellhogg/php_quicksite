@@ -9,6 +9,7 @@
 	/* --add-your-own: ;
 	--add-your-own: ;
 	--add-your-own: ; */
+	--padding-leftright: 6em 14em;
 }
 
 * {
@@ -21,6 +22,7 @@
 
 html, body {
     min-height: 100%;
+	background: var(--main-color);
 }
 
 /* ------- NAVBAR -------- */
@@ -33,7 +35,6 @@ html, body {
     justify-content: space-between;
     padding-left: 14rem;
     padding-right: 14rem;
-    border-bottom: 2px solid var(--main-contrast);
 }
 
 .logo {
@@ -107,7 +108,7 @@ html, body {
 	display: none;
     position: fixed;
     top: 0;
-    left: -100%;
+    left: -110%;
     width: 100vw;
     height: 100vh;
     background: var(--main-color);
@@ -246,7 +247,7 @@ html, body {
 
 footer {
     background: var(--main-color);
-	border-top: 2px solid var(--main-contrast);
+	/* border-top: 2px solid var(--main-contrast); */
 }
 
 .footer-container{
@@ -264,7 +265,7 @@ footer {
     font-size: 0.8rem;
     color: main-text;
     padding: 1rem;
-    border-top: 2px solid var(--main-contrast);
+    /* border-top: 2px solid var(--main-contrast); */
     text-align: center;
 }
 
@@ -296,7 +297,7 @@ footer {
 
 .contact-main-container {
 	background: var(--main-color);
-	border-top: 2px solid var(--main-contrast);
+	/* border-top: 2px solid var(--main-contrast); */
 	padding: 5em 0;
 }
 
