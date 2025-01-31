@@ -10,6 +10,83 @@
 	--add-your-own: ;
 	--add-your-own: ; */
 	--padding-leftright: 6em 14em;
+
+	/* BLACK */
+	--raisin-black: #272727;
+	--jet: #333533;
+	--onyx: #3C3C3B;
+	--rich-black-fogra39: #0D0A0B;
+
+	/* WHITE */
+	--cultured: #EFF1F3;
+	--ivory: #E8EDDF;
+	--beige: #EBEBD3;
+	--magnolia: #F3EFF5;
+	--nyanza: #E4FDE1;
+
+	/* GRAY */
+	--charcoal: #454955;
+	--silver-sand: #C1BFB5;
+
+	/* BLUE */
+	--blue-munsell: #009FB7;
+	--charcoal-blue: #2E4052;
+	--cobalt-blue: #1446A0;
+	--steel-teal: #55828B;
+	--deep-space-sparkle: #3B6064;
+	--green-sheen: #68B0AB;
+	--cambridge-blue: #8FC0A9;
+	--steel-blue: #427AA1;
+	--han-purple: #6320EE;
+	--medium-slate-blue: #8075FF;
+	--space-cadet: #222E50;
+	--teal-blue: #007991;
+
+	/* YELLOW */
+	--orange-yellow-crayola: #FED766;
+	--maize-crayola: #F5CB5C;
+	--naples-yellow: #F5D547;
+	--flax: #E9D985;
+
+	/* RED */
+	--red-pigment: #FF0022;
+	--rusty-red: #DE3C4B;
+	--razzmatazz: #DB3069;
+	--wine: #6B2737;
+	--fiery-rose: #F45B69;
+	--flame: #EB4511;
+	--chinese-red: #B02E0C;
+	--flicker-pink: #F92A82;
+	--tart-orange: #FF4B3E;
+	--persian-rose: #FF37A6;
+
+	/* ORANGE */
+
+	--cadmium-orange: #F28F3B;
+
+	/* GREEN */
+	--green-ryb: #72B01D;
+	--sap-green: #3F7D20;
+	--jade: #26A96C;
+	--amazon-green: #4A7C59;
+	--acid-green: #A5BE00;
+	--maximum-green: #679436;
+	--kelly-green: #43B929;
+	--ash-gray: #CAD5CA;
+
+	/* PADDING */
+	--main-padding-fullscreen: 6em 14em;
+	--main-padding-tablet: 4em 10em;
+	--main-padding-tablet-2: 2em 6em;
+	--main-padding-mobile: 1em;
+
+	/* TEXT */
+	/* --h1-font-size: 3em;
+	--h2-font-size: 2.6em;
+	--h3-font-size: 2.2em;
+	--h4-font-size: 1.8em;
+	--para-font-size: 1.6em;
+	--para-font-size-2: 1.4em; */
 }
 
 * {
@@ -248,6 +325,7 @@ html, body {
 footer {
     background: var(--main-color);
 	/* border-top: 2px solid var(--main-contrast); */
+	line-height: 2em;
 }
 
 .footer-container{
@@ -272,7 +350,6 @@ footer {
 .footer-contact-list {
     list-style-type: none;
     padding: 0;
-    line-height: 1.6rem;
 }
 
 .footer-contact-list-link a {
