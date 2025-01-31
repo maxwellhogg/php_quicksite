@@ -17,4 +17,5 @@ include './includes/offers-cards-elements/offers-cards-3.php';
 PORTFOLIO SECTION
 include './includes/portfolio-elements/portfolio-section-1.php';
 include './includes/portfolio-elements/portfolio-section-2.php';
+include './includes/portfolio-elements/portfolio-section-3.php';
 
